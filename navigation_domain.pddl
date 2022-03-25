@@ -3,7 +3,7 @@
 
     (:types
         room zone corridor - location
-        robot door elevator
+        robot door elevator object gripper
     )
 
     (:predicates
@@ -14,7 +14,10 @@
         (connected_elevator ?loc - location ?elevator - elevator)
         (door_open ?door - door)
         (door_closed ?door - door)
-
+        (gripper_at ?gripper - gripper ?robot - robot)
+        (gripper_free ?gripper - gripper)
+        (object_at ?object - object ?loc - location)
+        (robot_carry ?robot - robot ?object - object)
     )
 
     ;Move between connected locations when there is not door;
@@ -84,5 +87,40 @@
 
         )
     )
+
+
+    (:action pick_object
+        :parameters (?robot - robot ?object - object ?loc - location ?gripper - gripper)
+
+        :precondition 
+            (and
+                (gripper_at ?gripper ?robot)
+                (gripper_free ?gripper)
+                (object_at ?object ?loc)
+                (robot_at ?robot ?loc) 
+            )
+        :effect 
+            (and 
+                (robot_carry ?robot ?object) 
+                (not (object_at ?object ?loc))
+            )
+    )
+
+    (:action drop_object
+        :parameters (?robot - robot ?object - object ?loc - location ?gripper - gripper)
+        :precondition 
+            (and 
+                (gripper_at ?gripper ?robot)
+                (gripper_free ?gripper)
+                (robot_at ?robot ?loc) 
+                (robot_carry ?robot ?object) 
+            )
+        :effect 
+            (and 
+                (object_at ?object ?loc)
+                (not (robot_carry ?robot ?object))
+            )
+    )
+
 
 )

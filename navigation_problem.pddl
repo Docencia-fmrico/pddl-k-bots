@@ -8,10 +8,13 @@
         kbot - robot
         Door1 Door2 Door3 Door4 - door
         Elevator - elevator
+        Gripper - gripper
+        Object1 - object
     )
 
     (:init
         (robot_at kbot Room3)
+        (object_at Object1 Room2)
 
         (connected Room2 Corridor1)
         (connected Corridor1 Room2)
@@ -49,11 +52,16 @@
 
         (connected_through Room6 Corridor2 Door3)
         (connected_through Corridor2 Room6 Door3)
+
+        (gripper_at Gripper kbot)
+        (gripper_free Gripper)
+
     )
 
     (:goal
         (and
             (robot_at kbot Room6)
+            (object_at Object1 Room5)
         )
     )
 
