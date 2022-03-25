@@ -2,11 +2,12 @@
     (:domain robots-nav)
 
     (:objects
-        Room1 Room2 Room3 Room4 - room
+        Room1 Room2 Room3 Room4 Room5 Room6 - room
         Zone1 Zone2 Zone3 Zone4 Zone5 - zone
-        Corridor1 - corridor
+        Corridor1 Corridor2 - corridor
         kbot - robot
-        Door1 Door2 - door
+        Door1 Door2 Door3 Door4 - door
+        Elevator - elevator
     )
 
     (:init
@@ -36,13 +37,23 @@
         (connected_through Room1 Room3 Door2)
 
         (door_closed Door1)
-        (door_closed Door2)        
+        (door_closed Door2)    
+        (door_closed Door3)
+        (door_closed Door4)      
 
+        (connected_elevator Corridor1 Elevator)
+        (connected_elevator Corridor2 Elevator)
+
+        (connected_through Room5 Corridor2 Door4)
+        (connected_through Corridor2 Room5 Door4)
+
+        (connected_through Room6 Corridor2 Door3)
+        (connected_through Corridor2 Room6 Door3)
     )
 
     (:goal
         (and
-            (robot_at kbot Zone3)
+            (robot_at kbot Room6)
         )
     )
 
