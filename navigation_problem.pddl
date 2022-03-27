@@ -10,12 +10,13 @@
         PrevDoor1 PrevDoor2 PrevDoor3 PrevDoor4 PrevDoor5 PrevDoor6 PrevDoor7 - zone 
         Elevator - elevator
         Gripper - gripper
-        Object1 - object
+        Object1 Object2 - object
     )
 
     (:init
         (robot_at kbot Room3)
         (object_at Object1 Room2)
+        (object_at Object2 Room8)
 
         (connected Room2 Corridor1)
         (connected Corridor1 Room2)
@@ -91,8 +92,8 @@
 
     (:goal
         (and
-            (object_at Object1 Room5)
-            (robot_at kbot Room7)
+            (object_at Object1 Room1)
+            (object_at Object2 Room5)
         )
     )
 

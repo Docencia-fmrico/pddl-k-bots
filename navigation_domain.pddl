@@ -57,8 +57,9 @@
     )
 
     (:action open_door
-        :parameters (?robot - robot ?from ?to - location ?door - door)
+        :parameters (?robot - robot ?from ?to - location ?door - door ?gripper - gripper)
         :precondition (and
+            (gripper_free ?gripper)
             (robot_at ?robot ?from)
             (connected_through ?from ?to ?door)
             (door_closed ?door)
@@ -70,8 +71,9 @@
     )
 
     (:action close_door
-        :parameters (?robot - robot ?from ?at - location ?door - door)
+        :parameters (?robot - robot ?from ?at - location ?door - door ?gripper - gripper)
         :precondition (and
+            (gripper_free ?gripper)
             (robot_at ?robot ?at)
             (connected_through ?from ?at ?door)
             (door_open ?door)
@@ -114,7 +116,6 @@
 
     (:action pick_object
         :parameters (?robot - robot ?object - object ?loc - location ?gripper - gripper)
-
         :precondition 
             (and
                 (gripper_at ?gripper ?robot)
@@ -123,7 +124,8 @@
                 (robot_at ?robot ?loc) 
             )
         :effect 
-            (and 
+            (and
+                (not (gripper_free ?gripper))
                 (robot_carry ?robot ?object) 
                 (not (object_at ?object ?loc))
             )
@@ -134,12 +136,12 @@
         :precondition 
             (and 
                 (gripper_at ?gripper ?robot)
-                (gripper_free ?gripper)
                 (robot_at ?robot ?loc) 
                 (robot_carry ?robot ?object) 
             )
         :effect 
-            (and 
+            (and
+                (gripper_free ?gripper)
                 (object_at ?object ?loc)
                 (not (robot_carry ?robot ?object))
             )
