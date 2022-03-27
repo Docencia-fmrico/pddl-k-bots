@@ -2,11 +2,11 @@
     (:domain robots-nav)
 
     (:objects
-        Room1 Room2 Room3 Room4 Room5 Room6 - room
+        Room1 Room2 Room3 Room4 Room5 Room6 Room7 Room8 Room9 - room
         Zone1 Zone2 Zone3 Zone4 Zone5 - zone
-        Corridor1 Corridor2 - corridor
+        Corridor1 Corridor2 Corridor3 - corridor
         kbot - robot
-        Door1 Door2 Door3 Door4 - door
+        Door1 Door2 Door3 Door4 Door5 Door6 Door7 - door
         Elevator - elevator
         Gripper - gripper
         Object1 - object
@@ -43,6 +43,9 @@
         (door_closed Door2)    
         (door_closed Door3)
         (door_closed Door4)      
+        (door_closed Door5)    
+        (door_closed Door6)
+        (door_closed Door7) 
 
         (connected_elevator Corridor1 Elevator)
         (connected_elevator Corridor2 Elevator)
@@ -56,12 +59,21 @@
         (gripper_at Gripper kbot)
         (gripper_free Gripper)
 
+        (connected Corridor2 Corridor3)
+        (connected Corridor3 Corridor2)
+
+        (connected_through Room7 Corridor3 Door5)
+        (connected_through Corridor3 Room7 Door5)   
+        (connected_through Room8 Corridor3 Door7)
+        (connected_through Corridor3 Room8 Door7)
+        (connected_through Room9 Corridor3 Door6)
+        (connected_through Corridor3 Room9 Door6) 
     )
 
     (:goal
         (and
-            (robot_at kbot Room6)
             (object_at Object1 Room5)
+            (robot_at kbot Room7)
         )
     )
 

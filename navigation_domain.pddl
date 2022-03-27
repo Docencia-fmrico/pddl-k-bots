@@ -1,5 +1,5 @@
 (define (domain robots-nav)
-    (:requirements :strips :equality :typing)
+    (:requirements :strips :equality :typing :durative-actions)
 
     (:types
         room zone corridor - location
@@ -33,17 +33,27 @@
         )
     )
     ;Move between connected locations when there is door;
-    (:action move_through
+    (:durative-action move_through
         :parameters (?robot - robot ?from ?to - location ?door - door)
-        :precondition (and
-            (robot_at ?robot ?from)
-            (connected_through ?from ?to ?door)
-            (door_open ?door)
+        :duration(= ?duration 3)
+        :condition (and
+            (at start (and
+                (robot_at ?robot ?from)
+                (door_open ?door)
+            ))
+            (over all 
+                (connected_through ?from ?to ?door)
+            )
+            (at end 
+                (door_closed ?door)
+            )
         )
         :effect (and
-            (robot_at ?robot ?to)
-            (not (robot_at ?robot ?from))
-        )
+            (at start (and
+                (not (robot_at ?robot ?from))
+                (robot_at ?robot ?to)
+            )
+        ))
     )
 
     (:action open_door
@@ -56,6 +66,19 @@
         :effect (and
             (door_open ?door)
             (not (door_closed ?door))
+        )
+    )
+
+    (:action close_door
+        :parameters (?robot - robot ?from ?at - location ?door - door)
+        :precondition (and
+            (robot_at ?robot ?at)
+            (connected_through ?from ?at ?door)
+            (door_open ?door)
+        )
+        :effect (and
+            (door_closed ?door)
+            (not (door_open ?door))
         )
     )
 
@@ -121,6 +144,4 @@
                 (not (robot_carry ?robot ?object))
             )
     )
-
-
 )
