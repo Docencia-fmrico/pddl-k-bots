@@ -7,7 +7,7 @@
         Corridor1 Corridor2 Corridor3 - corridor
         kbot - robot
         Door1 Door2 Door3 Door4 Door5 Door6 Door7 - door
-        PrevDoor1 PrevDoor2 PrevDoor3 PrevDoor4 PrevDoor5 PrevDoor6 PrevDoor7 - zone 
+        DZ1 DZ2 DZ3 DZ4 DZ5 DZ6 DZ7 - zone 
         Elevator - elevator
         Gripper - gripper
         Object1 Object2 - object
@@ -30,20 +30,20 @@
         (connected Room2 Zone5)
         (connected Zone5 Room2)
 
-        (connected_through Room1 PrevDoor1 Door1)
-        (connected PrevDoor1 Corridor1)
-        (connected Corridor1 PrevDoor1)
-        (connected_through PrevDoor1 Room1 Door1)
+        (connected_through Room1 DZ1 Door1)
+        (connected DZ1 Corridor1)
+        (connected Corridor1 DZ1)
+        (connected_through DZ1 Room1 Door1)
 
         (connected Room1 Zone1)
         (connected Zone1 Room1)
         (connected Room1 Zone2)
         (connected Zone2 Room1)
 
-        (connected_through Room3 PrevDoor2 Door2)
-        (connected PrevDoor2 Room1)
-        (connected Room1 PrevDoor2)
-        (connected_through PrevDoor2 Room3 Door2)
+        (connected_through Room3 DZ2 Door2)
+        (connected DZ2 Room1)
+        (connected Room1 DZ2)
+        (connected_through DZ2 Room3 Door2)
 
         (door_closed Door1)
         (door_closed Door2)    
@@ -56,15 +56,15 @@
         (connected_elevator Corridor1 Elevator)
         (connected_elevator Corridor2 Elevator)
 
-        (connected_through Room5 PrevDoor4 Door4)
-        (connected_through PrevDoor4 Room5 Door4)
-        (connected PrevDoor4 Corridor2)
-        (connected Corridor2 PrevDoor4)
+        (connected_through Room5 DZ4 Door4)
+        (connected_through DZ4 Room5 Door4)
+        (connected DZ4 Corridor2)
+        (connected Corridor2 DZ4)
 
-        (connected_through Room6 PrevDoor3 Door3)
-        (connected_through PrevDoor3 Room6 Door3)
-        (connected PrevDoor3 Corridor2)
-        (connected Corridor2 PrevDoor3)
+        (connected_through Room6 DZ3 Door3)
+        (connected_through DZ3 Room6 Door3)
+        (connected DZ3 Corridor2)
+        (connected Corridor2 DZ3)
 
         (gripper_at Gripper kbot)
         (gripper_free Gripper)
@@ -72,20 +72,20 @@
         (connected Corridor2 Corridor3)
         (connected Corridor3 Corridor2)
 
-        (connected_through Room7 PrevDoor5 Door5)
-        (connected_through PrevDoor5 Room7 Door5)
-        (connected PrevDoor5 Corridor3)
-        (connected Corridor3 PrevDoor5)
+        (connected_through Room7 DZ5 Door5)
+        (connected_through DZ5 Room7 Door5)
+        (connected DZ5 Corridor3)
+        (connected Corridor3 DZ5)
 
-        (connected_through Room9 PrevDoor6 Door6)
-        (connected_through PrevDoor6 Room9 Door6)
-        (connected PrevDoor6 Corridor3)
-        (connected Corridor3 PrevDoor6)
+        (connected_through Room9 DZ6 Door6)
+        (connected_through DZ6 Room9 Door6)
+        (connected DZ6 Corridor3)
+        (connected Corridor3 DZ6)
 
-        (connected_through Room8 PrevDoor7 Door7)
-        (connected_through PrevDoor7 Room8 Door7)
-        (connected PrevDoor7 Corridor3)
-        (connected Corridor3 PrevDoor7)
+        (connected_through Room8 DZ7 Door7)
+        (connected_through DZ7 Room8 Door7)
+        (connected DZ7 Corridor3)
+        (connected Corridor3 DZ7)
 
 
     )
