@@ -1,0 +1,219 @@
+0.000: (move_directly kbot zone1 room1)  [0.001]
+
+0.001: (open_door kbot room1 dz1 door1 gripper1)  [0.001]
+
+0.002: (move_directly kbot room1 zone1)  [0.001]
+
+0.003: (pick_object kbot object1 zone1 gripper1)  [0.001]
+
+0.004: (move_directly kbot zone1 room1)  [0.001]
+
+0.005: (move_through kbot room1 dz1 door1)  [3.000]
+
+0.006: (drop_object kbot object1 dz1 gripper1)  [0.001]
+
+0.007: (close_door kbot room1 dz1 door1 gripper1)  [0.001]
+
+0.008: (pick_object kbot object1 dz1 gripper1)  [0.001]
+
+0.009: (move_directly kbot dz1 corridor3)  [0.001]
+
+0.010: (drop_object kbot object1 corridor3 gripper1)  [0.001]
+
+0.011: (take_elevator kbot corridor3 elevator1)  [0.001]
+
+0.012: (leave_elevator kbot elevator1 corridor6)  [0.001]
+
+0.013: (open_door kbot corridor6 corridor7 door11 gripper1)  [0.001]
+
+0.014: (move_through kbot corridor6 corridor7 door11)  [3.000]
+
+0.015: (close_door kbot corridor6 corridor7 door11 gripper1)  [0.001]
+
+3.015: (open_door kbot corridor7 corridor6 door11 gripper1)  [0.001]
+
+3.016: (move_directly kbot corridor7 corridor10)  [0.001]
+3.017: (open_door kbot corridor10 dz9 door9 gripper1)  [0.00
+1]
+
+3.018: (move_directly kbot corridor10 corridor7)  [0.001]
+
+3.019: (take_elevator kbot corridor7 elevator2)  [0.001]
+
+3.020: (leave_elevator kbot elevator2 corridor11)  [0.001]
+
+3.021: (move_directly kbot corridor11 dz12a)  [0.001]
+
+3.022: (open_door kbot dz12a dz12b door12 gripper1)  [0.001]
+
+3.023: (move_through kbot dz12a dz12b door12)  [3.000]
+
+3.024: (close_door kbot dz12a dz12b door12 gripper1)  [0.001]
+
+6.024: (open_door kbot dz12b dz12a door12 gripper1)  [0.001]
+
+6.025: (move_directly kbot dz12b room13)  [0.001]
+
+6.026: (move_directly kbot room13 dz13a)  [0.001]
+
+6.027: (open_door kbot dz13a dz13b door13 gripper1)  [0.001]
+
+6.028: (move_directly kbot dz13a room13)  [0.001]
+
+6.029: (move_directly kbot room13 dz12b)  [0.001]
+
+6.030: (move_through kbot dz12b dz12a door12)  [3.000]
+
+6.031: (move_directly kbot dz12a corridor11)  [0.001]
+
+6.032: (take_elevator kbot corridor11 elevator2)  [0.001]
+
+6.033: (leave_elevator kbot elevator2 corridor7)  [0.001]
+
+6.034: (move_directly kbot corridor7 corridor10)  [0.001]
+
+6.035: (move_through kbot corridor10 dz9 door9)  [3.000]
+
+6.036: (move_directly kbot dz9 room9)  [0.001]
+
+6.037: (pick_object kbot object2 room9 gripper1)  [0.001]
+
+6.038: (move_directly kbot room9 dz9)  [0.001]
+
+6.039: (move_through kbot dz9 corridor10 door9)  [3.000]
+
+6.040: (drop_object kbot object2 corridor10 gripper1)  [0.001]
+
+6.041: (close_door kbot dz9 corridor10 door9 gripper1)  [0.001]
+
+6.042: (move_directly kbot corridor10 corridor7)  [0.001]
+
+6.043: (take_elevator kbot corridor7 elevator2)  [0.001]
+
+6.044: (leave_elevator kbot elevator2 corridor11)  [0.001]
+
+6.045: (move_directly kbot corridor11 dz12a)  [0.001]
+
+6.046: (close_door kbot dz12b dz12a door12 gripper1)  [0.001]
+
+9.031: (open_door kbot dz12a dz12b door12 gripper1)  [0.001]
+
+9.032: (move_directly kbot dz12a corridor11)  [0.001]
+
+9.033: (take_elevator kbot corridor11 elevator2)  [0.001]
+
+9.034: (leave_elevator kbot elevator2 corridor7)  [0.001]
+
+9.035: (move_through kbot corridor7 corridor6 door11)  [3.000]
+
+9.036: (take_elevator kbot corridor6 elevator1)  [0.001]
+
+9.037: (leave_elevator kbot elevator1 corridor3)  [0.001]
+
+9.038: (pick_object kbot object1 corridor3 gripper1)  [0.001]
+
+9.039: (take_elevator kbot corridor3 elevator1)  [0.001]
+
+9.040: (leave_elevator kbot elevator1 corridor6)  [0.001]
+
+9.041: (move_through kbot corridor6 corridor7 door11)  [3.000]
+
+9.042: (move_directly kbot corridor7 corridor10)  [0.001]
+
+9.043: (move_directly kbot corridor10 room11)  [0.001]
+
+9.044: (drop_object kbot object1 room11 gripper1)  [0.001]
+
+9.045: (move_directly kbot room11 corridor10)  [0.001]
+
+9.046: (pick_object kbot object2 corridor10 gripper1)  [0.001]
+
+9.047: (move_directly kbot corridor10 corridor7)  [0.001]
+
+9.048: (drop_object kbot object2 corridor7 gripper1)  [0.001]
+
+9.049: (close_door kbot corridor6 corridor7 door11 gripper1)  [0.001]
+
+9.050: (take_elevator kbot corridor7 elevator2)  [0.001]
+
+9.051: (leave_elevator kbot elevator2 corridor7)  [0.001]
+
+12.042: (open_door kbot corridor7 corridor6 door11 gripper1)  [0.001]
+
+12.043: (take_elevator kbot corridor7 elevator2)  [0.001]
+
+12.044: (leave_elevator kbot elevator2 corridor11)  [0.001]
+
+12.045: (move_directly kbot corridor11 dz12a)  [0.001]
+
+12.046: (move_through kbot dz12a dz12b door12)  [3.000]
+
+12.047: (move_through kbot dz12b dz12a door12)  [3.000]
+
+12.048: (close_door kbot dz12b dz12a door12 gripper1)  [0.001]
+
+12.049: (move_directly kbot dz12a corridor11)  [0.001]
+
+12.050: (take_elevator kbot corridor11 elevator2)  [0.001]
+
+12.051: (leave_elevator kbot elevator2 corridor7)  [0.001]
+
+12.052: (pick_object kbot object2 corridor7 gripper1)  [0.001]
+
+12.053: (take_elevator kbot corridor7 elevator2)  [0.001]
+
+12.054: (leave_elevator kbot elevator2 corridor11)  [0.001]
+
+12.055: (move_directly kbot corridor11 dz12a)  [0.001]
+
+12.056: (drop_object kbot object2 dz12a gripper1)  [0.001]
+
+15.048: (open_door kbot dz12a dz12b door12 gripper1)  [0.001]
+
+15.049: (pick_object kbot object2 dz12a gripper1)  [0.001]
+
+15.050: (move_through kbot dz12a dz12b door12)  [3.000]
+
+15.051: (move_directly kbot dz12b room13)  [0.001]
+
+15.052: (move_directly kbot room13 dz13a)  [0.001]
+
+15.053: (move_through kbot dz13a dz13b door13)  [3.000]
+
+15.054: (move_directly kbot dz13b room16)  [0.001]
+
+15.055: (drop_object kbot object2 room16 gripper1)  [0.001]
+
+15.056: (move_directly kbot room16 dz13b)  [0.001]
+
+15.057: (move_through kbot dz13b dz13a door13)  [3.000]
+
+15.058: (close_door kbot dz13b dz13a door13 gripper1)  [0.001]
+
+15.059: (move_directly kbot dz13a room13)  [0.001]
+
+15.060: (move_directly kbot room13 dz12b)  [0.001]
+
+15.061: (move_through kbot dz12b dz12a door12)  [3.000]
+
+15.062: (close_door kbot dz12b dz12a door12 gripper1)  [0.001]
+
+15.063: (move_directly kbot dz12a corridor11)  [0.001]
+
+15.064: (take_elevator kbot corridor11 elevator2)  [0.001]
+
+15.065: (leave_elevator kbot elevator2 corridor7)  [0.001]
+
+15.066: (move_through kbot corridor7 corridor6 door11)  [3.000]
+
+15.067: (close_door kbot corridor7 corridor6 door11 gripper1)  [0.001]
+
+15.068: (take_elevator kbot corridor6 elevator1)  [0.001]
+
+15.069: (leave_elevator kbot elevator1 corridor3)  [0.001]
+
+15.070: (move_directly kbot corridor3 corridor1)  [0.001]
+
+15.071: (move_directly kbot corridor1 room5)  [0.001]
+
+
