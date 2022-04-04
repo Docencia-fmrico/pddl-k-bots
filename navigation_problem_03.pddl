@@ -12,14 +12,17 @@
         DZ12A DZ12B DZ13A DZ13B DZ14A DZ14B DZ15A DZ15B DZ16A DZ16B DZ17A DZ17B - zone
 
         Elevator1 Elevator2 Elevator3 - elevator
-        Gripper1 - gripper
+        Gripper1 Gripper2 - gripper
         Object1 Object2 - object
     )
 
     (:init
         (robot_at kbot Zone1)
+        
         (gripper_at Gripper1 kbot)
         (gripper_free Gripper1)
+        (gripper_at Gripper2 kbot)
+        (gripper_free Gripper2)
 
         (object_at Object1 Zone1)
         (object_at Object2 Room9)

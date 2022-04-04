@@ -9,7 +9,7 @@
         Door1 Door2 Door3 Door4 Door5 Door6 Door7 Door8 Door9 Door10 Door11 Door12 Door13 - door
         DZ1 DZ2 DZ3 DZ4 DZ5 DZ6 DZ7 DZ8 DZ9 DZ10 DZ11 DZ12 DZ13 - zone 
         Elevator1 Elevator2 - elevator
-        Gripper1 - gripper
+        Gripper1 Gripper2 - gripper
         Object1 Object2 - object
     )
 
@@ -17,6 +17,8 @@
         (robot_at kbot Room3)
         (gripper_at Gripper1 kbot)
         (gripper_free Gripper1)
+        (gripper_at Gripper2 kbot)
+        (gripper_free Gripper2)
 
         ;(robot_at kbot2 Room3)
         ;(gripper_at Gripper2 kbot2)

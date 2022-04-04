@@ -3,7 +3,8 @@
 
     (:types
         room zone corridor - location
-        robot door elevator object gripper
+        gripper
+        robot door elevator object
     )
 
     (:predicates

@@ -10,7 +10,7 @@
 
 
         Elevator1 Elevator2 - elevator
-        Gripper1 - gripper
+        Gripper1 Gripper2 - gripper
         Object1 Object2 - object
     )
 
@@ -18,7 +18,8 @@
         (robot_at kbot Room1)
         (gripper_at Gripper1 kbot)
         (gripper_free Gripper1)
-
+        (gripper_at Gripper2 kbot)
+        (gripper_free Gripper2)
         (object_at Object1 Zone5)
         (object_at Object2 Zone2)
 
