@@ -1,26 +1,32 @@
 # PDDL-Hospital
 
-# Introduccion 
-En esta practica realizaremos un plan para poder resolver varios problemas mediante popf utilizando PDDL
+# Introducción 
+En esta práctica realizaremos un plan para poder resolver varios problemas mediante popf utilizando PDDL
 
 # Primeros pasos
-En primer lugar, empezaremos clasificar las diferentes localizaciones del problema: 
 
-![image](https://user-images.githubusercontent.com/73492480/161500719-084e040a-f070-4478-807d-e85e69773b7d.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73492480/161500719-084e040a-f070-4478-807d-e85e69773b7d.png"> 
+</p align>
 
-Ahora empezaremos a definir los predicados que necesitaremos a medida que vayamos avanzando:
+Cuando ya tuvimos previamente la clasificacion, para abordar la resolución del problema pensamos una aproximación a un arbol de busquedad: 
 
-![image](https://user-images.githubusercontent.com/73492480/161501759-86d31993-9ce0-4f0a-ad5e-a15e9f239520.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73492480/161577917-8088d321-5a95-49ab-9c93-cccb2e329d8a.png"> 
+</p align>
 
-![image](https://user-images.githubusercontent.com/73492480/161502632-bd081fe3-cc46-45e7-8227-cf6465162c0a.png)
+# Alfombra vs no alfombra
 
-![image](https://user-images.githubusercontent.com/73492480/161502896-48a0d427-3e20-4375-8e71-9a51793226c9.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73492480/161579991-f2cb8d45-92d3-4f77-a784-e65674a71028.png"> 
+</p align>
 
-Y las acciones:
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73492480/161580186-95b8d10d-c811-48b9-a249-18723d34c5f7.png"> 
+</p align>
 
-![image](https://user-images.githubusercontent.com/73492480/161505850-c54542dd-b670-4734-a4b5-42dab0c93c52.png)
+# Un gripper vs Dos gripper 
 
-
-
-
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73492480/161581649-a76820e3-3655-4477-896e-5eafa8d090cb.png"> 
+</p align>
