@@ -6,11 +6,9 @@ En esta práctica realizaremos un plan para poder resolver varios problemas medi
 # Primeros pasos
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/73492480/161500719-084e040a-f070-4478-807d-e85e69773b7d.png"> 
+<img src="https://user-images.githubusercontent.com/73492480/161593453-e072a73c-3d9f-45f1-a2d3-13295b40ad55.png"> 
 </p align>
-
-Cuando ya tuvimos previamente la clasificacion, para abordar la resolución del problema pensamos una aproximación a un arbol de busquedad: 
-
+ 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73492480/161577917-8088d321-5a95-49ab-9c93-cccb2e329d8a.png"> 
 </p align>
